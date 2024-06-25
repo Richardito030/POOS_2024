@@ -49,6 +49,6 @@ print(f"La nueva velocidad del coche es: {coche1.velocidad}")
 
 coche2=Coches()
 coche2.marca="Porshe"
-coche2.color="Amarillo"
+coche2.color="amarillo"
 coche2.modelo="2024"
 print(f"Marca: {coche2.marca} {coche2.color}, numeros de plazas: {coche2.plazas} \nModelo: {coche2.modelo} con una velocidad de {coche2.velocidad} Km/h y un potencia de {coche2.caballaje} hp")

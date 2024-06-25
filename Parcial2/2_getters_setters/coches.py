@@ -14,7 +14,7 @@ class Coches:
     #Caracteristicas del coche
     #valores iniciales es posible declarar al principio de una clase
     marca="Ferrari"
-    color="rojo"
+    color="Rojo"
     modelo="2010"
     velocidad=300
     caballaje=500
