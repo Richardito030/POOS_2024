@@ -8,3 +8,5 @@ print("Objeto 2")
 coche2=Coches("Azul","2012",200,900,1)
 coche2.getInfo()
 
+#print(coche1.publico_atributo) esto no es permitido
+print(coche1.getPrivadoAtributo(self))

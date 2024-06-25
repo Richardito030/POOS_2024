@@ -83,3 +83,16 @@ def getInfo(self):
 
 #Crear un objetos o instanciar la clase
 
+#en python el encapsulamiento tambbien se llama 
+#visibilidad y por lo general define como seran los atributos y metdos publicos y privados
+publico_atributo="soy un atributo publico"
+#atributo privado
+_privado_atributo="soy un atributo privado"
+def  getPrivadorAtributo(self):
+  return self._privado_atributo
+#metodo privado
+def _getFuncionaPrivada(self):
+      print("soy metodo prividas")
+      #es necesario haecrlo dentro de un metodo pubblico 
+def getMetodoPublico(self):
+      self._getMetodoPrivado()

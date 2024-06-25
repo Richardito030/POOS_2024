@@ -11,8 +11,9 @@ para dar un valor a lñpoa triburos del objeto al momento de crearlo """
 #Ejemplo 1 Crear una clase (un molde para crear mas objetos)llamada Coches y apartir de la clase crear objetos o instancias (coche) con caracteristicas similares
 
 class Coches:
-
+    
     #Atributos o propiedades (variables)
+
     #Caracteristicas del coche
     #valores iniciales es posible declarar al principio de una clase
     color="rojo"
@@ -82,4 +83,78 @@ def getInfo(self):
     #Fin definir clase
 
 #Crear un objetos o instanciar la clase
+
+#en python el encapsulamiento tambbien se llama 
+#visibilidad y por lo general define como seran los atributos y metdos publicos y privados
+publico_atributo="soy un atributo publico"
+#atributo privado
+_privado_atributo="soy un atributo privado"
+def  getPrivadorAtributo(self):
+  return self._privado_atributo
+#metodo privado
+def _getFuncionaPrivada(self):
+      print("soy metodo prividas")
+      #es necesario haecrlo dentro de un metodo pubblico 
+def getMetodoPublico(self):
+      self._getMetodoPrivado()
+
+def getInfo(self):
+
+            print(f"Marca:{self.getMarca()}{self.getColor()},numeros de plazas:
+                  {self.getPlazas()} Modelo:{self.getCaballaje()}con una velocidad de
+                  {self.getEje()} ejes y una capacidad de carga de {self,getCapacidadCarga()}metros cubicos")
+#----------------------------------------------------------------------------------------------S
+class Camiones(Coches):
+            def _init_(self,color,marca,modelo,veloicidad,caballaje,plazas):
+                  super()._init_(color,marca,modelo,veloicidad,caballaje,plazas)
+            _self._eje=eje
+            _self._capacidadCarga=capacidadCarga
+            
+_tipo_carga=""
+def carga(self,tipo_carga):
+    self.tipo_carga=tipo_carga
+    return self.tipo_carga
+
+def getEje(self):
+   return self._eje
+
+def setEje(self,eje):
+    self._eje=get
+
+def getCapacidadCarga(self):
+      return self._capacidadCarga
+
+def setCapacidadCarga(self,eje):
+      self._CapacidadCarga=capacidadCarga
+def getInfo(self):
+            print(f"Marca:{self.getMarca()}{self.getColor()},numeros de plazas:
+                  {self.getPlazas()} Modelo:{self.getCaballaje()}con una velocidad de
+                  {self.getEje()} ejes y una capacidad de carga de {self,getCapacidadCarga()}metros cubicos")
+#-----------------------------------------------------------------------------------------------
+class Camionetas(Coches):
+            def _init_(self,color,marca,modelo,veloicidad,caballaje,plazas):
+                  super()._init_(color,marca,modelo,veloicidad,caballaje,plazas)
+            _self._cerrada=cerrada
+            _self._traccion=traccion
+            
+_transportar=""
+def tranccion(self,tipo_traccion):
+    self.tipo_tranccion=tipo_traccion
+    return self.tipo_traccion
+def getEje(self):
+   return self._cerrada
+
+def setEje(self,eje):
+    self._cerrada=get
+
+def getTraccion(self):
+      return self._tipo_traccion
+
+def setTipotransporte(self,eje):
+      self._Tipotransporte=tipo_traccion
+
+def getInfo(self):
+            print(f"Marca:{self.getMarca()}{self.getColor()},numeros de plazas:
+                  {self.getPlazas()} Modelo:{self.getCaballaje()}con una velocidad de
+                  {self.getTraccion()} ejes y una capacidad de carga de {self,getCerrada()}metros cubicos")
 
