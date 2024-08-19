@@ -16,6 +16,7 @@ alumnos={
     "area":"Desarrollo de SW Multiplataforma",
     "semestres":11,
     "duracion":3.8
+
 }
 
 print(alumnos)
